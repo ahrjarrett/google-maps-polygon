@@ -37,13 +37,19 @@ function initMap() {
 
   var logPath = document.getElementById('log-path')
   logPath.addEventListener('click', function(e){
+
     e.preventDefault()
+    var parentNode = document.getElementById('path-log')
+    while (parentNode.firstChild) {
+      parentNode.removeChild(parentNode.firstChild);
+    }
+
     currentPath.forEach(function(coordinate, idx){
       var logTemplate = `${idx + 1}: lat ${coordinate.lat()} lng ${coordinate.lng()}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(logTemplate)
       node.appendChild(textnode)
-      document.getElementById('path-log').appendChild(node)
+      parentNode.appendChild(node)
     })
   })
 
