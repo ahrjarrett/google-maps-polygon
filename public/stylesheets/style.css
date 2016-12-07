@@ -27,3 +27,8 @@ a {
   max-width: 25%;
   min-width: 25%;
 }
+
+.price-filter {
+  width: 100%;
+}
+

@@ -29,18 +29,13 @@ function initMap() {
   undoPin()
   logPath(currentPath)
 
-  //var results = []
-  //var checkAgainstMap = function(location, polygon){
-  //  var polygon = polygon
-  //  if(google.maps.geometry.poly.containsLocation(location, polygon)) {
-  //    results.push(location)
-  //    //console.log(location.lat(), location.lng())
-  //  }
-  //}
-
-      //var datum = new google.maps.LatLng(home)
-      //var renderData = checkAgainstMap(datum, polygon)
-      //console.log(results.lat(), results.lng())
+  var getPriceRange = document.getElementById('get-price-range')
+  getPriceRange.addEventListener('click', function(e){
+    e.preventDefault()
+    var minPrice = document.getElementById('min-price').value
+    var maxPrice = document.getElementById('max-price').value
+    console.log(minPrice, maxPrice)
+  })
 
   var checkAgainstMapBtn = document.getElementById('check-against-map')
   checkAgainstMapBtn.addEventListener('click', function(e){
@@ -48,11 +43,15 @@ function initMap() {
     e.preventDefault()
     var results = []
     var parentNode = document.getElementById('check-map-log')
+    var minPrice = document.getElementById('min-price').value
+    var maxPrice = document.getElementById('max-price').value
 
     R.map(function(home){
       var datum = new google.maps.LatLng(home)
-      if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
-        results.push(home)
+      if(home.price >= minPrice && home.price <= maxPrice){
+        if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+            results.push(home)
+        }
       }
     }, homes)
 

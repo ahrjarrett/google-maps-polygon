@@ -8,7 +8,13 @@ block content
       button#log-path.log-path Log Path
       button#check-against-map.check-against-map Check Against Map
       button#see-json.see-json(onclick='location.href="/data"') See JSON Data
+      button#get-price-range.get-price-range Log Price Range
+      .price-range
+        label Minimum Price:
+        input#min-price.price-filter(value='0')
+        label Maximum Price:
+        input#max-price.price-filter(value='1000000')
       .path-log Path Log:
         ul#path-log.path-log
-      .check-map-log Homes within Polygon:
+      .check-map-log Homes inside Polygon & within Price Range:
         ul#check-map-log.check-map-log
