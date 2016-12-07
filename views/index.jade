@@ -4,16 +4,24 @@ block content
   #content-wrapper
     #map-canvas.map-canvas
     #main-interface.main-interface
+      script.
+        var minPriceOutput = '#min-price-output'
+        var maxPriceOutput = '#max-price-output'
+        function outputUpdate(price, id) { document.querySelector(id).value = `$${price}`}
       button#undo-point.undo-point Undo Last Pin-Drop
       button#log-path.log-path Log Path
       button#check-against-map.check-against-map Check Against Map
       button#see-json.see-json(onclick='location.href="/data"') See JSON Data
       button#get-price-range.get-price-range Log Price Range
       .price-range
-        label Minimum Price:
-        input#min-price.price-filter(value='0')
-        label Maximum Price:
-        input#max-price.price-filter(value='1000000')
+        label(for='min-price') Min Price
+        input.price-filter(id='min-price' type='range' min='0' max='1500000' step='100' value='0' oninput='outputUpdate(value, minPriceOutput)')
+        .price-output
+          output.price-output(for='min-price' id='min-price-output') $0
+        label(for='max-price') Max Price
+        input.price-filter(id='max-price' type='range' min='0' max='1500000' step='100' value='1000000' oninput='outputUpdate(value, maxPriceOutput)')
+        .price-output
+          output.price(for='max-price' id='max-price-output') $100000
       .path-log Path Log:
         ul#path-log.path-log
       .check-map-log Homes inside Polygon & within Price Range:
