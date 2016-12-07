@@ -3,14 +3,25 @@ html, body {
   margin: 0;
   padding: 0;
 }
-#map-canvas {
-  height: 100%;
-}
 body {
-  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
+}
+
+#content-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#map-canvas {
+  height: 100%;
+  width: 75%;
+}
+
+#main-interface {
+  display: flex;
+  flex-direction: column;
 }

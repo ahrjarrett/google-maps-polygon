@@ -17,9 +17,16 @@ function initMap() {
 
   polygon.setMap(map)
 
+  var currentPath = polygon.getPath()
   google.maps.event.addListener(map, 'click', function(e) {
-    var currentPath = polygon.getPath()
-    if(currentPath.length < 5) currentPath.push(e.latLng)
+    if(currentPath.length < 6) currentPath.push(e.latLng)
+    console.log(currentPath)
+  })
+
+  var undoPin = document.getElementById('undo-point')
+  undoPin.addEventListener('click', function(e){
+    e.preventDefault()
+    currentPath.pop()
   })
 
   //points.push(new google.maps.LatLng(39.7047, -105.0814))
@@ -30,7 +37,6 @@ function initMap() {
   //var polylineOpts = { path: points, strokeColor: '#ff0000', strokeWeight:3 }
   //var polyline = new google.maps.Polyline(polylineOpts)
   //polyline.setMap(map)
-
 
 
 }

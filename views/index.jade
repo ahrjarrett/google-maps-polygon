@@ -1,4 +1,8 @@
 extends layout
 
 block content
-  #map-canvas
+  #content-wrapper
+    #map-canvas.map-canvas
+    #main-interface.main-interface
+      button#undo-point.undo-point Undo Last Pin-Drop
+      input.address-street(placeholder='Street Address')
