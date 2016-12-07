@@ -24,4 +24,5 @@ a {
 #main-interface {
   display: flex;
   flex-direction: column;
+  max-width: 25%;
 }

@@ -21,7 +21,7 @@ function initMap() {
     this.opacity = .25
   }
 
-  var polygon = new google.maps.Polygon(new polygonOpts('#1cb841', false))
+  var polygon = new google.maps.Polygon(new polygonOpts('#1cb841', true))
   polygon.setMap(map)
 
   var currentPath = polygon.getPath()
@@ -35,20 +35,19 @@ function initMap() {
     currentPath.pop()
   })
 
-  var enableDrag = document.getElementById('enable-drag')
-  var disableDrag = document.getElementById('disable-drag')
-  enableDrag.addEventListener('click', function(e) {
+  var logPath = document.getElementById('log-path')
+  logPath.addEventListener('click', function(e){
     e.preventDefault()
-    polygonOpts = new polygonOpts('#1F8DD6', true)
-    var polygon = new google.maps.Polygon(polygonOpts)
-    polygon.setMap(map)
+    currentPath.forEach(function(coordinate, idx){
+      //console.log(`lat: ${coordinate.lat()} lat: ${coordinate.lng()}`)
+    var logTemplate = `${idx + 1}: lat = ${coordinate.lat()} lat = ${coordinate.lng()}`
+    var node = document.createElement('LI')
+    var textnode = document.createTextNode(logTemplate)
+    node.appendChild(textnode)
+    document.getElementById('path-log').appendChild(node)
+    })
   })
-  disableDrag.addEventListener('click', function(e) {
-    e.preventDefault()
-    polygonOpts = new polygonOpts('#1cb841', false)
-    var polygon = new google.maps.Polygon(polygonOpts)
-    polygon.setMap(map)
-  })
+
 }
 
 window.onload = initMap
