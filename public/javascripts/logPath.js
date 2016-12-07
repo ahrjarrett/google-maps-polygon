@@ -1,7 +1,7 @@
 // break while loop and forEach into own module
-module.exports = function(currentPath){
-  this.currentPath = currentPath
-  var logPath = document.getElementById('log-path')
+module.exports = function(path, el){
+  this.currentPath = path
+  var logPath = document.getElementById(el)
   logPath.addEventListener('click', function(e){
 
     e.preventDefault()
