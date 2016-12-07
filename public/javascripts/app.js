@@ -12,15 +12,13 @@ function initMap() {
 
   var points = new google.maps.MVCArray()
 
-  var polygonOpts = { path: points, strokeColor: '#ff0000', fillColor: '#ff0000', opacity: .3 }
+  var polygonOpts = { path: points, strokeColor: '#1cb841', fillColor: '#1cb841', opacity: .25 }
   var polygon = new google.maps.Polygon(polygonOpts)
-
   polygon.setMap(map)
 
   var currentPath = polygon.getPath()
   google.maps.event.addListener(map, 'click', function(e) {
     if(currentPath.length < 6) currentPath.push(e.latLng)
-    console.log(currentPath)
   })
 
   var undoPin = document.getElementById('undo-point')
@@ -28,16 +26,6 @@ function initMap() {
     e.preventDefault()
     currentPath.pop()
   })
-
-  //points.push(new google.maps.LatLng(39.7047, -105.0814))
-  //points.push(new google.maps.LatLng(39.7555, -105.2211))
-  //points.push(new google.maps.LatLng(39.8028, -105.0875))
-  //points.push(new google.maps.LatLng(39.7392, -104.9903))
-
-  //var polylineOpts = { path: points, strokeColor: '#ff0000', strokeWeight:3 }
-  //var polyline = new google.maps.Polyline(polylineOpts)
-  //polyline.setMap(map)
-
 
 }
 
