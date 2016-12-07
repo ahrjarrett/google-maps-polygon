@@ -1,19 +1,23 @@
 {
   "name": "google-maps-polygon",
   "version": "0.0.0",
-  "description": "* Create a map program where I can draw polygons in and around Denver * process real estate data against the map program so I can put each home into its proper polygon (drawn on the map) * add some custom columns into the DB based on IF/Then statements or calculations * Ability to export the data * Future - have a front end interface hit the DB for reporting.",
-  "main": "index.js",
+  "description": "Create a map program where I can draw polygons in and around Denver",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahrjarrett/google-maps-polygon.git"
   },
   "author": "Andrew Jarrett",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahrjarrett/google-maps-polygon/issues"
-  },
-  "homepage": "https://github.com/ahrjarrett/google-maps-polygon#readme"
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  }
 }
