@@ -45,7 +45,7 @@ function initMap() {
     }
 
     currentPath.forEach(function(coordinate, idx){
-      var logTemplate = `${idx + 1}: lat ${coordinate.lat()} lng ${coordinate.lng()}`
+      var logTemplate = `${idx + 1}: ${coordinate.lat()} ${coordinate.lng()}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(logTemplate)
       node.appendChild(textnode)
