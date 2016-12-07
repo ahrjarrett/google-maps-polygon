@@ -12,8 +12,16 @@ function initMap() {
 
   var points = new google.maps.MVCArray()
 
-  var polygonOpts = { path: points, strokeColor: '#1cb841', fillColor: '#1cb841', opacity: .25 }
-  var polygon = new google.maps.Polygon(polygonOpts)
+  // polygonOpts :: String, Bool -> Obj
+  var polygonOpts = function(color, draggable){
+    this.path = points
+    this.strokeColor = color
+    this.fillColor = color
+    this.draggable = draggable
+    this.opacity = .25
+  }
+
+  var polygon = new google.maps.Polygon(new polygonOpts('#1cb841', false))
   polygon.setMap(map)
 
   var currentPath = polygon.getPath()
@@ -27,6 +35,20 @@ function initMap() {
     currentPath.pop()
   })
 
+  var enableDrag = document.getElementById('enable-drag')
+  var disableDrag = document.getElementById('disable-drag')
+  enableDrag.addEventListener('click', function(e) {
+    e.preventDefault()
+    polygonOpts = new polygonOpts('#1F8DD6', true)
+    var polygon = new google.maps.Polygon(polygonOpts)
+    polygon.setMap(map)
+  })
+  disableDrag.addEventListener('click', function(e) {
+    e.preventDefault()
+    polygonOpts = new polygonOpts('#1cb841', false)
+    var polygon = new google.maps.Polygon(polygonOpts)
+    polygon.setMap(map)
+  })
 }
 
 window.onload = initMap
