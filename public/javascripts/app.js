@@ -39,12 +39,11 @@ function initMap() {
   logPath.addEventListener('click', function(e){
     e.preventDefault()
     currentPath.forEach(function(coordinate, idx){
-      //console.log(`lat: ${coordinate.lat()} lat: ${coordinate.lng()}`)
-    var logTemplate = `${idx + 1}: lat = ${coordinate.lat()} lat = ${coordinate.lng()}`
-    var node = document.createElement('LI')
-    var textnode = document.createTextNode(logTemplate)
-    node.appendChild(textnode)
-    document.getElementById('path-log').appendChild(node)
+      var logTemplate = `${idx + 1}: lat ${coordinate.lat()} lng ${coordinate.lng()}`
+      var node = document.createElement('LI')
+      var textnode = document.createTextNode(logTemplate)
+      node.appendChild(textnode)
+      document.getElementById('path-log').appendChild(node)
     })
   })
 
