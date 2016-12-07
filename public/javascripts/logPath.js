@@ -1,3 +1,4 @@
+// break while loop and forEach into own module
 module.exports = function(currentPath){
   this.currentPath = currentPath
   var logPath = document.getElementById('log-path')
