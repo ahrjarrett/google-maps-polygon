@@ -1,10 +1,11 @@
 {
   "name": "google-maps-polygon",
   "version": "0.0.0",
-  "description": "Create a map program where I can draw polygons in and around Denver",
+  "description": "a map program where I can draw polygons in and around Denver",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
