@@ -8940,17 +8940,19 @@ module.exports = function(path, el){
 },{}],5:[function(require,module,exports){
 (function(){
 
-  var map
   var R = require('ramda')
   var homes = require('./data.json')
 
+  var map
   var markers = []
+  var results = []
 
   function initMap() {
     var opts = require('./opts')
     var undoPin = require('./undoPin')
     var logPath = require('./logPath')
     var logHomes = require('./logHomes')
+    var showHomes = require('./showHomes')
 
     var mapDiv = 'map-canvas'
     var mapOpts = opts.mapOpts
@@ -8966,61 +8968,17 @@ module.exports = function(path, el){
       if(currentPath.length < 6) currentPath.push(e.latLng)
     })
 
-    var testDiv = document.getElementById('test-div')
-    var results = []
-    testDiv.addEventListener('click', function(e){
-
-      var minPrice = document.getElementById('min-price').value
-      var maxPrice = document.getElementById('max-price').value
-
-      var setMapOnAll = function(mapToSet){
-        for(var i = 0; i < markers.length; i++){
-          markers[i].setMap(mapToSet)
-        }
-      }
-      var clearMarkers = function(){
-        setMapOnAll(null)
-      }
-      var deleteMarkers = function(){
-        clearMarkers()
-        markers = []
-      }
-      var addMarker = function(location){
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map
-        })
-      }
-
-      var getHomes = R.map(function(home){
-        var datum = new google.maps.LatLng(home)
-        if(home.price >= minPrice && home.price <= maxPrice){
-          if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
-              results.push(home)
-              markers.push(new google.maps.Marker({ position: home }))
-          }
-        }
-      })
-      deleteMarkers()
-      getHomes(homes)
-
-      setMapOnAll(map)
-
-    })
-
-
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
     logHomes(map, polygon, 'log-homes')
-
+    showHomes(map, polygon, markers, results, 'show-homes')
 
   }
-
   window.onload = initMap
 
 }())
 
-},{"./data.json":2,"./logHomes":3,"./logPath":4,"./opts":6,"./undoPin":7,"ramda":1}],6:[function(require,module,exports){
+},{"./data.json":2,"./logHomes":3,"./logPath":4,"./opts":6,"./showHomes":7,"./undoPin":8,"ramda":1}],6:[function(require,module,exports){
 var opts = {
   mapOpts: {
     center: { lat: 39.7392, lng: -104.9903 },
@@ -9038,6 +8996,54 @@ var opts = {
 module.exports = opts
 
 },{}],7:[function(require,module,exports){
+var R = require('ramda')
+var homes = require('./data.json')
+
+module.exports = function(map, polygon, markers, results, el){
+  var showHomes = document.getElementById(el)
+  showHomes.addEventListener('click', function(e){
+
+    var minPrice = document.getElementById('min-price').value
+    var maxPrice = document.getElementById('max-price').value
+
+    var setMapOnAll = function(mapToSet){
+      for(var i = 0; i < markers.length; i++){
+        markers[i].setMap(mapToSet)
+      }
+    }
+    var clearMarkers = function(){
+      setMapOnAll(null)
+    }
+    var deleteMarkers = function(){
+      clearMarkers()
+      markers = []
+    }
+    var addMarker = function(location){
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      })
+    }
+
+    var getHomes = R.map(function(home){
+      var datum = new google.maps.LatLng(home)
+      if(home.price >= minPrice && home.price <= maxPrice){
+        if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+            results.push(home)
+            markers.push(new google.maps.Marker({ position: home }))
+        }
+      }
+    })
+
+    deleteMarkers()
+    getHomes(homes)
+    setMapOnAll(map)
+
+  })
+
+}
+
+},{"./data.json":2,"ramda":1}],8:[function(require,module,exports){
 module.exports = function(el){
   var undoPin = document.getElementById(el)
   undoPin.addEventListener('click', function(e){
