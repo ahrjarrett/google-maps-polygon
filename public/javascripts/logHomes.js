@@ -37,8 +37,8 @@ module.exports = function(map, poly, el){
   })
 
 
-  var checkAgainstMapBtn = document.getElementById(el)
-  checkAgainstMapBtn.addEventListener('click', function(e){
+  var logHomes = document.getElementById(el)
+  logHomes.addEventListener('click', function(e){
 
     e.preventDefault()
     var parentNode = document.getElementById('check-map-log')

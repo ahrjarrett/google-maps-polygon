@@ -10,14 +10,13 @@
     var opts = require('./opts')
     var undoPin = require('./undoPin')
     var logPath = require('./logPath')
-    var checkMap = require('./checkMap')
+    var logHomes = require('./logHomes')
 
     var mapDiv = 'map-canvas'
     var mapOpts = opts.mapOpts
 
     map = new google.maps.Map(document.getElementById(mapDiv), mapOpts)
 
-    var points = new google.maps.MVCArray()
     var polyOpts = opts.polyOpts
     var polygon = new google.maps.Polygon(polyOpts)
     polygon.setMap(map)
@@ -65,7 +64,6 @@
       deleteMarkers()
       getHomes(homes)
 
-      console.log(markers)
       setMapOnAll(map)
 
     })
@@ -73,7 +71,7 @@
 
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    checkMap(map, polygon, 'check-against-map')
+    logHomes(map, polygon, 'log-homes')
 
 
   }

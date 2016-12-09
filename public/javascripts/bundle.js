@@ -8832,6 +8832,23 @@
 }.call(this));
 
 },{}],2:[function(require,module,exports){
+module.exports=[
+  { "lat": 39.71933533081653, "lng": -104.95479583740234, "price": 100000 },
+  { "lat": 39.74943369178247, "lng": -105.02723693847656, "price": 200000 },
+  { "lat": 39.771339142289,   "lng": -104.97539520263672, "price": 300000 },
+  { "lat": 39.78637860850151, "lng": -104.99771118164062, "price": 400000 },
+  { "lat": 39.78980820192016, "lng": -104.908447265625  , "price": 500000 },
+  { "lat": 39.74204232950661, "lng": -105.02655029296875, "price": 600000 },
+  { "lat": 39.69450749856092, "lng": -105.106201171875  , "price": 700000 },
+  { "lat": 39.65751331590311, "lng": -104.98947143554688, "price": 800000 },
+  { "lat": 39.75048953595117, "lng": -105.13916015625   , "price": 900000 },
+  { "lat": 39.79059962227578, "lng": -105.15838623046875, "price": 1000000 },
+  { "lat": 39.79271003204449, "lng": -105.23941040039062, "price": 1100000 },
+  { "lat": 39.43407169253772, "lng": -104.09271240234375, "price": 1200000 }
+]
+
+
+},{}],3:[function(require,module,exports){
 var R = require('ramda')
 var homes = require('./data.json')
 
@@ -8871,8 +8888,8 @@ module.exports = function(map, poly, el){
   })
 
 
-  var checkAgainstMapBtn = document.getElementById(el)
-  checkAgainstMapBtn.addEventListener('click', function(e){
+  var logHomes = document.getElementById(el)
+  logHomes.addEventListener('click', function(e){
 
     e.preventDefault()
     var parentNode = document.getElementById('check-map-log')
@@ -8897,24 +8914,7 @@ module.exports = function(map, poly, el){
   })
 }
 
-},{"./data.json":3,"ramda":1}],3:[function(require,module,exports){
-module.exports=[
-  { "lat": 39.71933533081653, "lng": -104.95479583740234, "price": 100000 },
-  { "lat": 39.74943369178247, "lng": -105.02723693847656, "price": 200000 },
-  { "lat": 39.771339142289,   "lng": -104.97539520263672, "price": 300000 },
-  { "lat": 39.78637860850151, "lng": -104.99771118164062, "price": 400000 },
-  { "lat": 39.78980820192016, "lng": -104.908447265625  , "price": 500000 },
-  { "lat": 39.74204232950661, "lng": -105.02655029296875, "price": 600000 },
-  { "lat": 39.69450749856092, "lng": -105.106201171875  , "price": 700000 },
-  { "lat": 39.65751331590311, "lng": -104.98947143554688, "price": 800000 },
-  { "lat": 39.75048953595117, "lng": -105.13916015625   , "price": 900000 },
-  { "lat": 39.79059962227578, "lng": -105.15838623046875, "price": 1000000 },
-  { "lat": 39.79271003204449, "lng": -105.23941040039062, "price": 1100000 },
-  { "lat": 39.43407169253772, "lng": -104.09271240234375, "price": 1200000 }
-]
-
-
-},{}],4:[function(require,module,exports){
+},{"./data.json":2,"ramda":1}],4:[function(require,module,exports){
 // break while loop and forEach into own module
 module.exports = function(path, el){
   this.currentPath = path
@@ -8928,7 +8928,7 @@ module.exports = function(path, el){
     }
 
     currentPath.forEach(function(coordinate, idx){
-      var logTemplate = `${coordinate.lat()}, ${coordinate.lng()}`
+      var logTemplate = `{lat: ${coordinate.lat()}, lng: ${coordinate.lng()}},`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(logTemplate)
       node.appendChild(textnode)
@@ -8950,14 +8950,13 @@ module.exports = function(path, el){
     var opts = require('./opts')
     var undoPin = require('./undoPin')
     var logPath = require('./logPath')
-    var checkMap = require('./checkMap')
+    var logHomes = require('./logHomes')
 
     var mapDiv = 'map-canvas'
     var mapOpts = opts.mapOpts
 
     map = new google.maps.Map(document.getElementById(mapDiv), mapOpts)
 
-    var points = new google.maps.MVCArray()
     var polyOpts = opts.polyOpts
     var polygon = new google.maps.Polygon(polyOpts)
     polygon.setMap(map)
@@ -9005,7 +9004,6 @@ module.exports = function(path, el){
       deleteMarkers()
       getHomes(homes)
 
-      console.log(markers)
       setMapOnAll(map)
 
     })
@@ -9013,7 +9011,7 @@ module.exports = function(path, el){
 
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    checkMap(map, polygon, 'check-against-map')
+    logHomes(map, polygon, 'log-homes')
 
 
   }
@@ -9022,7 +9020,7 @@ module.exports = function(path, el){
 
 }())
 
-},{"./checkMap":2,"./data.json":3,"./logPath":4,"./opts":6,"./undoPin":7,"ramda":1}],6:[function(require,module,exports){
+},{"./data.json":2,"./logHomes":3,"./logPath":4,"./opts":6,"./undoPin":7,"ramda":1}],6:[function(require,module,exports){
 var opts = {
   mapOpts: {
     center: { lat: 39.7392, lng: -104.9903 },
