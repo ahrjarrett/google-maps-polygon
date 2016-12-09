@@ -8837,46 +8837,62 @@ var homes = require('./data.json')
 
 module.exports = function(map, poly, el){
   var polygon = poly
+  var markers = []
+  var results = []
+  var minPrice = document.getElementById('min-price').value
+  var maxPrice = document.getElementById('max-price').value
+
+  var setMapOnAll = function(mapToSet){
+    for(var i = 0; i < markers.length; i++){
+      markers[i].setMap(mapToSet)
+    }
+  }
+  var clearMarkers = function(){
+    setMapOnAll(null)
+  }
+  var deleteMarkers = function(){
+    clearMarkers()
+    markers = []
+  }
+  var addMarker = function(location){
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    })
+  }
+
+  var getHomes = R.map(function(home){
+    var datum = new google.maps.LatLng(home)
+    if(home.price >= minPrice && home.price <= maxPrice){
+      if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+          results.push(home)
+      }
+    }
+  })
+
 
   var checkAgainstMapBtn = document.getElementById(el)
   checkAgainstMapBtn.addEventListener('click', function(e){
 
     e.preventDefault()
-    var results = []
     var parentNode = document.getElementById('check-map-log')
-    var minPrice = document.getElementById('min-price').value
-    var maxPrice = document.getElementById('max-price').value
 
-    R.map(function(home){
-      var datum = new google.maps.LatLng(home)
-      if(home.price >= minPrice && home.price <= maxPrice){
-        if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
-            results.push(home)
-        }
-      }
-    }, homes)
+    getHomes(homes)
 
     //break while loop and forEach into own module
     while (parentNode.firstChild) {
       parentNode.removeChild(parentNode.firstChild);
     }
+    deleteMarkers()
     results.forEach(function(home, idx){
       var checkMapTemplate = `${home.lat} ${home.lng}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
+      markers.push(new google.maps.Marker({ position: home }))
     })
-    results.forEach(function(home, idx){
-      console.log(`{lat: ${home.lat}, lng: ${home.lng}}`)
 
-      var marker = new google.maps.Marker({
-        map: map,
-        position: {lat: home.lat, lng: home.lng},
-        title: `Home #${idx}`
-      })
-
-    })
 
   })
 }
@@ -8912,7 +8928,7 @@ module.exports = function(path, el){
     }
 
     currentPath.forEach(function(coordinate, idx){
-      var logTemplate = `${idx + 1}: ${coordinate.lat()} ${coordinate.lng()}`
+      var logTemplate = `${coordinate.lat()}, ${coordinate.lng()}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(logTemplate)
       node.appendChild(textnode)
@@ -8925,6 +8941,10 @@ module.exports = function(path, el){
 (function(){
 
   var map
+  var R = require('ramda')
+  var homes = require('./data.json')
+
+  var markers = []
 
   function initMap() {
     var opts = require('./opts')
@@ -8947,15 +8967,54 @@ module.exports = function(path, el){
       if(currentPath.length < 6) currentPath.push(e.latLng)
     })
 
-    var marker = new google.maps.Marker({
-      map: map,
-      position: mapOpts.center,
-      title: 'Testing!'
+    var testDiv = document.getElementById('test-div')
+    var results = []
+    testDiv.addEventListener('click', function(e){
+
+      var minPrice = document.getElementById('min-price').value
+      var maxPrice = document.getElementById('max-price').value
+
+      var setMapOnAll = function(mapToSet){
+        for(var i = 0; i < markers.length; i++){
+          markers[i].setMap(mapToSet)
+        }
+      }
+      var clearMarkers = function(){
+        setMapOnAll(null)
+      }
+      var deleteMarkers = function(){
+        clearMarkers()
+        markers = []
+      }
+      var addMarker = function(location){
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        })
+      }
+
+      var getHomes = R.map(function(home){
+        var datum = new google.maps.LatLng(home)
+        if(home.price >= minPrice && home.price <= maxPrice){
+          if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+              results.push(home)
+              markers.push(new google.maps.Marker({ position: home }))
+          }
+        }
+      })
+      deleteMarkers()
+      getHomes(homes)
+
+      console.log(markers)
+      setMapOnAll(map)
+
     })
+
 
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
     checkMap(map, polygon, 'check-against-map')
+
 
   }
 
@@ -8963,7 +9022,7 @@ module.exports = function(path, el){
 
 }())
 
-},{"./checkMap":2,"./logPath":4,"./opts":6,"./undoPin":7}],6:[function(require,module,exports){
+},{"./checkMap":2,"./data.json":3,"./logPath":4,"./opts":6,"./undoPin":7,"ramda":1}],6:[function(require,module,exports){
 var opts = {
   mapOpts: {
     center: { lat: 39.7392, lng: -104.9903 },
