@@ -10,13 +10,6 @@ var opts = {
     draggable: true,
     opacity: .25
   }
-  //polygonOpts: function(color, draggable){
-//    this.path = points
-  //  this.strokeColor = color
-  //  this.fillColor = color
-  //  this.draggable = draggable
-  //  this.opacity = .25
-  //}
 }
 
 module.exports = opts

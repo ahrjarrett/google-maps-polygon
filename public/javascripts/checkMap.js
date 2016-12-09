@@ -1,7 +1,7 @@
 var R = require('ramda')
 var homes = require('./data.json')
 
-module.exports = function(poly, el){
+module.exports = function(map, poly, el){
   var polygon = poly
 
   var checkAgainstMapBtn = document.getElementById(el)
@@ -32,6 +32,16 @@ module.exports = function(poly, el){
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
+    })
+    results.forEach(function(home, idx){
+      console.log(`{lat: ${home.lat}, lng: ${home.lng}}`)
+
+      var marker = new google.maps.Marker({
+        map: map,
+        position: {lat: home.lat, lng: home.lng},
+        title: `Home #${idx}`
+      })
+
     })
 
   })

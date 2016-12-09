@@ -8835,7 +8835,7 @@
 var R = require('ramda')
 var homes = require('./data.json')
 
-module.exports = function(poly, el){
+module.exports = function(map, poly, el){
   var polygon = poly
 
   var checkAgainstMapBtn = document.getElementById(el)
@@ -8866,6 +8866,16 @@ module.exports = function(poly, el){
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
+    })
+    results.forEach(function(home, idx){
+      console.log(`{lat: ${home.lat}, lng: ${home.lng}}`)
+
+      var marker = new google.maps.Marker({
+        map: map,
+        position: {lat: home.lat, lng: home.lng},
+        title: `Home #${idx}`
+      })
+
     })
 
   })
@@ -8937,9 +8947,15 @@ module.exports = function(path, el){
       if(currentPath.length < 6) currentPath.push(e.latLng)
     })
 
+    var marker = new google.maps.Marker({
+      map: map,
+      position: mapOpts.center,
+      title: 'Testing!'
+    })
+
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    checkMap(polygon, 'check-against-map')
+    checkMap(map, polygon, 'check-against-map')
 
   }
 
@@ -8960,13 +8976,6 @@ var opts = {
     draggable: true,
     opacity: .25
   }
-  //polygonOpts: function(color, draggable){
-//    this.path = points
-  //  this.strokeColor = color
-  //  this.fillColor = color
-  //  this.draggable = draggable
-  //  this.opacity = .25
-  //}
 }
 
 module.exports = opts

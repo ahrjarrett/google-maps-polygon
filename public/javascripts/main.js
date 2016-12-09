@@ -23,9 +23,15 @@
       if(currentPath.length < 6) currentPath.push(e.latLng)
     })
 
+    var marker = new google.maps.Marker({
+      map: map,
+      position: mapOpts.center,
+      title: 'Testing!'
+    })
+
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    checkMap(polygon, 'check-against-map')
+    checkMap(map, polygon, 'check-against-map')
 
   }
 
