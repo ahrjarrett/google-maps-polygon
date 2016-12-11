@@ -4,9 +4,8 @@
   "description": "a map program where I can draw polygons in and around Denver",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "watch": "watchify public/javascripts/main.js -o public/javascripts/bundle.js"
+    "watch": "watchify public/javascripts/main.js -o public/javascripts/bundle.js",
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
     "express": "~4.14.0",
     "jade": "~1.11.0",
     "mongodb": "^2.2.15",
+    "mongoose": "^4.7.2",
     "morgan": "~1.7.0",
     "purecss": "^0.6.0",
     "ramda": "^0.22.1",

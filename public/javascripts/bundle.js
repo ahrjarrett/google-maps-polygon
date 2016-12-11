@@ -1,4 +1,562 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+module.exports=[
+  {
+    "address_components": [
+      {
+        "long_name": "5059",
+        "short_name": "5059",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Osceola Street",
+        "short_name": "Osceola St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Northwest",
+        "short_name": "Northwest",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80212",
+        "short_name": "80212",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "2626",
+        "short_name": "2626",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "5059 Osceola St, Denver, CO 80212, USA",
+    "geometry": {
+      "price": 250000,
+      "location": {
+        "lat": 39.788539,
+        "lng": -105.038419
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7898879802915,
+          "lng": -105.0370700197085
+        },
+        "southwest": {
+          "lat": 39.7871900197085,
+          "lng": -105.0397679802915
+        }
+      }
+    },
+    "place_id": "ChIJRXP6doyHa4cR_LoZkrHFgsI",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "12370",
+        "short_name": "12370",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "East 55th Avenue",
+        "short_name": "E 55th Ave",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Montbello",
+        "short_name": "Montbello",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80239",
+        "short_name": "80239",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "3611",
+        "short_name": "3611",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "12370 E 55th Ave, Denver, CO 80239, USA",
+    "geometry": {
+      "price": 350000,
+      "location": {
+        "lat": 39.796006,
+        "lng": -104.844438
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7973549802915,
+          "lng": -104.8430890197085
+        },
+        "southwest": {
+          "lat": 39.7946570197085,
+          "lng": -104.8457869802915
+        }
+      }
+    },
+    "place_id": "ChIJH7dAR9VkbIcRiVJgaZNe4NA",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "75",
+        "short_name": "75",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "North Emerson Street",
+        "short_name": "N Emerson St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Central",
+        "short_name": "Central",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80218",
+        "short_name": "80218",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "75 N Emerson St, Denver, CO 80218, USA",
+    "geometry": {
+      "price": 550000,
+      "location": {
+        "lat": 39.717774,
+        "lng": -104.977221
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7191229802915,
+          "lng": -104.9758720197085
+        },
+        "southwest": {
+          "lat": 39.7164250197085,
+          "lng": -104.9785699802915
+        }
+      }
+    },
+    "place_id": "ChIJUWcHDOd-bIcRtxKL1MmENZM",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "3734",
+        "short_name": "3734",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Fillmore Street",
+        "short_name": "Fillmore St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "North",
+        "short_name": "North",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80205",
+        "short_name": "80205",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "3644",
+        "short_name": "3644",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "3734 Fillmore St, Denver, CO 80205, USA",
+    "geometry": {
+      "price": 650000,
+      "location": {
+        "lat": 39.768785,
+        "lng": -104.953266
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7701339802915,
+          "lng": -104.9519170197085
+        },
+        "southwest": {
+          "lat": 39.7674360197085,
+          "lng": -104.9546149802915
+        }
+      }
+    },
+    "place_id": "ChIJeTctIW95bIcR4ii88MN_q44",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "5045",
+        "short_name": "5045",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Meade Street",
+        "short_name": "Meade St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Northwest",
+        "short_name": "Northwest",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80221",
+        "short_name": "80221",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "1033",
+        "short_name": "1033",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "5045 Meade St, Denver, CO 80221, USA",
+    "geometry": {
+      "price": 750000,
+      "location": {
+        "lat": 39.78826,
+        "lng": -105.036105
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7896089802915,
+          "lng": -105.0347560197085
+        },
+        "southwest": {
+          "lat": 39.7869110197085,
+          "lng": -105.0374539802915
+        }
+      }
+    },
+    "place_id": "ChIJ8ZrKx4uHa4cRu0JpBJJs018",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "5817",
+        "short_name": "5817",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Biscay Street",
+        "short_name": "Biscay St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80249",
+        "short_name": "80249",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "8315",
+        "short_name": "8315",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "5817 Biscay St, Denver, CO 80249, USA",
+    "geometry": {
+      "location": {
+        "lat": 39.802233,
+        "lng": -104.767747
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.8035819802915,
+          "lng": -104.7663980197085
+        },
+        "southwest": {
+          "lat": 39.8008840197085,
+          "lng": -104.7690959802915
+        }
+      }
+    },
+    "place_id": "ChIJNW7O2DNkbIcRxC8hF4Vb6iQ",
+    "types": [
+      "street_address"
+    ]
+  }
+]
+
+},{}],2:[function(require,module,exports){
 //  Ramda v0.22.1
 //  https://github.com/ramda/ramda
 //  (c) 2013-2016 Scott Sauyet, Michael Hurley, and David Chambers
@@ -8831,578 +9389,9 @@
 
 }.call(this));
 
-},{}],2:[function(require,module,exports){
-module.exports=[
-
-{
-  "address_components": [
-    {
-      "long_name": "5059",
-      "short_name": "5059",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "Osceola Street",
-      "short_name": "Osceola St",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "Northwest",
-      "short_name": "Northwest",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80212",
-      "short_name": "80212",
-      "types": [
-        "postal_code"
-      ]
-    },
-    {
-      "long_name": "2626",
-      "short_name": "2626",
-      "types": [
-        "postal_code_suffix"
-      ]
-    }
-  ],
-  "formatted_address": "5059 Osceola St, Denver, CO 80212, USA",
-  "geometry": {
-    "price": 250000,
-    "location": {
-      "lat": 39.788539,
-      "lng": -105.038419
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7898879802915,
-        "lng": -105.0370700197085
-      },
-      "southwest": {
-        "lat": 39.7871900197085,
-        "lng": -105.0397679802915
-      }
-    }
-  },
-  "place_id": "ChIJRXP6doyHa4cR_LoZkrHFgsI",
-  "types": [
-    "street_address"
-  ]
-},
-{
-  "address_components": [
-    {
-      "long_name": "12370",
-      "short_name": "12370",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "East 55th Avenue",
-      "short_name": "E 55th Ave",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "Montbello",
-      "short_name": "Montbello",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80239",
-      "short_name": "80239",
-      "types": [
-        "postal_code"
-      ]
-    },
-    {
-      "long_name": "3611",
-      "short_name": "3611",
-      "types": [
-        "postal_code_suffix"
-      ]
-    }
-  ],
-  "formatted_address": "12370 E 55th Ave, Denver, CO 80239, USA",
-  "geometry": {
-    "price": 350000,
-    "location": {
-      "lat": 39.796006,
-      "lng": -104.844438
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7973549802915,
-        "lng": -104.8430890197085
-      },
-      "southwest": {
-        "lat": 39.7946570197085,
-        "lng": -104.8457869802915
-      }
-    }
-  },
-  "place_id": "ChIJH7dAR9VkbIcRiVJgaZNe4NA",
-  "types": [
-    "street_address"
-  ]
-},
-{
-  "address_components": [
-    {
-      "long_name": "75",
-      "short_name": "75",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "North Emerson Street",
-      "short_name": "N Emerson St",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "Central",
-      "short_name": "Central",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80218",
-      "short_name": "80218",
-      "types": [
-        "postal_code"
-      ]
-    }
-  ],
-  "formatted_address": "75 N Emerson St, Denver, CO 80218, USA",
-  "geometry": {
-    "price": 550000,
-    "location": {
-      "lat": 39.717774,
-      "lng": -104.977221
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7191229802915,
-        "lng": -104.9758720197085
-      },
-      "southwest": {
-        "lat": 39.7164250197085,
-        "lng": -104.9785699802915
-      }
-    }
-  },
-  "place_id": "ChIJUWcHDOd-bIcRtxKL1MmENZM",
-  "types": [
-    "street_address"
-  ]
-},
-{
-  "address_components": [
-    {
-      "long_name": "3734",
-      "short_name": "3734",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "Fillmore Street",
-      "short_name": "Fillmore St",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "North",
-      "short_name": "North",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80205",
-      "short_name": "80205",
-      "types": [
-        "postal_code"
-      ]
-    },
-    {
-      "long_name": "3644",
-      "short_name": "3644",
-      "types": [
-        "postal_code_suffix"
-      ]
-    }
-  ],
-  "formatted_address": "3734 Fillmore St, Denver, CO 80205, USA",
-  "geometry": {
-    "price": 650000,
-    "location": {
-      "lat": 39.768785,
-      "lng": -104.953266
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7701339802915,
-        "lng": -104.9519170197085
-      },
-      "southwest": {
-        "lat": 39.7674360197085,
-        "lng": -104.9546149802915
-      }
-    }
-  },
-  "place_id": "ChIJeTctIW95bIcR4ii88MN_q44",
-  "types": [
-    "street_address"
-  ]
-},
-{
-  "address_components": [
-    {
-      "long_name": "5045",
-      "short_name": "5045",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "Meade Street",
-      "short_name": "Meade St",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "Northwest",
-      "short_name": "Northwest",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80221",
-      "short_name": "80221",
-      "types": [
-        "postal_code"
-      ]
-    },
-    {
-      "long_name": "1033",
-      "short_name": "1033",
-      "types": [
-        "postal_code_suffix"
-      ]
-    }
-  ],
-  "formatted_address": "5045 Meade St, Denver, CO 80221, USA",
-  "geometry": {
-    "price": 750000,
-    "location": {
-      "lat": 39.78826,
-      "lng": -105.036105
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7896089802915,
-        "lng": -105.0347560197085
-      },
-      "southwest": {
-        "lat": 39.7869110197085,
-        "lng": -105.0374539802915
-      }
-    }
-  },
-  "place_id": "ChIJ8ZrKx4uHa4cRu0JpBJJs018",
-  "types": [
-    "street_address"
-  ]
-},
-{
-  "address_components": [
-    {
-      "long_name": "5059",
-      "short_name": "5059",
-      "types": [
-        "street_number"
-      ]
-    },
-    {
-      "long_name": "Osceola Street",
-      "short_name": "Osceola St",
-      "types": [
-        "route"
-      ]
-    },
-    {
-      "long_name": "Northwest",
-      "short_name": "Northwest",
-      "types": [
-        "neighborhood",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver",
-      "short_name": "Denver",
-      "types": [
-        "locality",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Denver County",
-      "short_name": "Denver County",
-      "types": [
-        "administrative_area_level_2",
-        "political"
-      ]
-    },
-    {
-      "long_name": "Colorado",
-      "short_name": "CO",
-      "types": [
-        "administrative_area_level_1",
-        "political"
-      ]
-    },
-    {
-      "long_name": "United States",
-      "short_name": "US",
-      "types": [
-        "country",
-        "political"
-      ]
-    },
-    {
-      "long_name": "80212",
-      "short_name": "80212",
-      "types": [
-        "postal_code"
-      ]
-    },
-    {
-      "long_name": "2626",
-      "short_name": "2626",
-      "types": [
-        "postal_code_suffix"
-      ]
-    }
-  ],
-  "formatted_address": "5059 Osceola St, Denver, CO 80212, USA",
-  "geometry": {
-    "price": 850000,
-    "location": {
-      "lat": 39.788539,
-      "lng": -105.038419
-    },
-    "location_type": "ROOFTOP",
-    "viewport": {
-      "northeast": {
-        "lat": 39.7898879802915,
-        "lng": -105.0370700197085
-      },
-      "southwest": {
-        "lat": 39.7871900197085,
-        "lng": -105.0397679802915
-      }
-    }
-  },
-  "place_id": "ChIJRXP6doyHa4cR_LoZkrHFgsI",
-  "types": [
-    "street_address"
-  ]
-}
-
-]
-
 },{}],3:[function(require,module,exports){
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, poly, el){
   var polygon = poly
@@ -9439,22 +9428,21 @@ module.exports = function(map, poly, el){
     }
   })
 
-  var logHomes = document.getElementById(el)
-  logHomes.addEventListener('click', function(e){
-
+  var logAddresses = document.getElementById(el)
+  logAddresses.addEventListener('click', function(e){
     e.preventDefault()
-    var parentNode = document.getElementById('check-map-log')
-
+    deleteMarkers()
     getHomes(homes)
 
-    //break while loop and forEach into own module
-    while (parentNode.firstChild) {
-      parentNode.removeChild(parentNode.firstChild);
-    }
-    deleteMarkers()
+    var parentNode = document.getElementById('addresses-log')
+    var removeElements = (elms) => Array.from(elms).forEach((el) => el.remove())
+
+    removeElements(document.querySelectorAll('.li-address'))
+
     results.forEach(function(home, idx){
       var checkMapTemplate = `${home.formatted_address}`
       var node = document.createElement('LI')
+      node.className += 'li-address'
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
@@ -9464,9 +9452,9 @@ module.exports = function(map, poly, el){
   })
 }
 
-},{"./data.json":2,"ramda":1}],4:[function(require,module,exports){
+},{"../../db/data.json":1,"ramda":2}],4:[function(require,module,exports){
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, poly, el){
   var polygon = poly
@@ -9507,13 +9495,13 @@ module.exports = function(map, poly, el){
   logLatLng.addEventListener('click', function(e){
 
     e.preventDefault()
-    var parentNode = document.getElementById('check-map-log')
+    var parentNode = document.getElementById('lat-lng-log')
 
     getHomes(homes)
 
     //break while loop and forEach into own module
     while (parentNode.firstChild) {
-      //console.log(firstChild)
+      console.log(parentNode.firstChild)
       parentNode.removeChild(parentNode.firstChild);
     }
     deleteMarkers()
@@ -9529,7 +9517,7 @@ module.exports = function(map, poly, el){
   })
 }
 
-},{"./data.json":2,"ramda":1}],5:[function(require,module,exports){
+},{"../../db/data.json":1,"ramda":2}],5:[function(require,module,exports){
 // break while loop and forEach into own module
 module.exports = function(path, el){
   this.currentPath = path
@@ -9543,7 +9531,7 @@ module.exports = function(path, el){
     }
 
     currentPath.forEach(function(coordinate, idx){
-      var logTemplate = `{lat: ${coordinate.lat()}, lng: ${coordinate.lng()}},`
+      var logTemplate = `{lat: ${coordinate.lat()}, lng: ${coordinate.lng()}}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(logTemplate)
       node.appendChild(textnode)
@@ -9556,7 +9544,7 @@ module.exports = function(path, el){
 (function(){
 
   var R = require('ramda')
-  var homes = require('./data.json')
+  var homes = require('../../db/data.json')
 
   var map
   var markers = []
@@ -9597,7 +9585,7 @@ module.exports = function(path, el){
 
 }())
 
-},{"./data.json":2,"./logAddresses":3,"./logLatLng":4,"./logPath":5,"./opts":7,"./showHomes":8,"./undoPin":9,"ramda":1}],7:[function(require,module,exports){
+},{"../../db/data.json":1,"./logAddresses":3,"./logLatLng":4,"./logPath":5,"./opts":7,"./showHomes":8,"./undoPin":9,"ramda":2}],7:[function(require,module,exports){
 var opts = {
   mapOpts: {
     center: { lat: 39.7392, lng: -104.9903 },
@@ -9616,7 +9604,7 @@ module.exports = opts
 
 },{}],8:[function(require,module,exports){
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, polygon, markers, results, el){
   var showHomes = document.getElementById(el)
@@ -9663,7 +9651,7 @@ module.exports = function(map, polygon, markers, results, el){
 
 }
 
-},{"./data.json":2,"ramda":1}],9:[function(require,module,exports){
+},{"../../db/data.json":1,"ramda":2}],9:[function(require,module,exports){
 module.exports = function(el){
   var undoPin = document.getElementById(el)
   undoPin.addEventListener('click', function(e){

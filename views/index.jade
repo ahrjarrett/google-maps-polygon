@@ -24,8 +24,10 @@ block content
         label(for='max-price') Max Price
         input.price-filter(id='max-price' type='range' min='0' max='1500000' step='100' value='1500000' oninput='outputUpdate(value, maxPriceOutput)')
         .price-output
-          output.price(for='max-price' id='max-price-output') $100000
-      .path-log Path Log:
+          output.price(for='max-price' id='max-price-output') $1500000
+      .path-log.logger Polygon Coordinates:
         ul#path-log.path-log
-      .check-map-log Homes Inside Polygon, Within Price Range:
-        ul#check-map-log.check-map-log
+      .addresses-log.logger Addresses Inside Polygon, Within Price Range:
+        ul#addresses-log.addresses-log
+      .lat-lng-log.logger Coordinates Inside Polygon, Within Price Range:
+        ul#lat-lng-log

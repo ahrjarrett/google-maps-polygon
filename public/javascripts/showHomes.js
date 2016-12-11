@@ -1,5 +1,5 @@
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, polygon, markers, results, el){
   var showHomes = document.getElementById(el)

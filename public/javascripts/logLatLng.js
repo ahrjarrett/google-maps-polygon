@@ -1,5 +1,5 @@
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, poly, el){
   var polygon = poly
@@ -40,13 +40,13 @@ module.exports = function(map, poly, el){
   logLatLng.addEventListener('click', function(e){
 
     e.preventDefault()
-    var parentNode = document.getElementById('check-map-log')
+    var parentNode = document.getElementById('lat-lng-log')
 
     getHomes(homes)
 
     //break while loop and forEach into own module
     while (parentNode.firstChild) {
-      //console.log(firstChild)
+      console.log(parentNode.firstChild)
       parentNode.removeChild(parentNode.firstChild);
     }
     deleteMarkers()

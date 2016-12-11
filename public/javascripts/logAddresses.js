@@ -1,5 +1,5 @@
 var R = require('ramda')
-var homes = require('./data.json')
+var homes = require('../../db/data.json')
 
 module.exports = function(map, poly, el){
   var polygon = poly
@@ -36,22 +36,21 @@ module.exports = function(map, poly, el){
     }
   })
 
-  var logHomes = document.getElementById(el)
-  logHomes.addEventListener('click', function(e){
-
+  var logAddresses = document.getElementById(el)
+  logAddresses.addEventListener('click', function(e){
     e.preventDefault()
-    var parentNode = document.getElementById('check-map-log')
-
+    deleteMarkers()
     getHomes(homes)
 
-    //break while loop and forEach into own module
-    while (parentNode.firstChild) {
-      parentNode.removeChild(parentNode.firstChild);
-    }
-    deleteMarkers()
+    var parentNode = document.getElementById('addresses-log')
+    var removeElements = (elms) => Array.from(elms).forEach((el) => el.remove())
+
+    removeElements(document.querySelectorAll('.li-address'))
+
     results.forEach(function(home, idx){
       var checkMapTemplate = `${home.formatted_address}`
       var node = document.createElement('LI')
+      node.className += 'li-address'
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
