@@ -3,7 +3,7 @@ var router = express.Router();
 var data = require('../db/data.json')
 
 router.get('/', function(req, res, next) {
-  console.log(data)
+  //console.log(data)
   res.json(data);
 });
 

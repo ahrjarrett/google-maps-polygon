@@ -15,7 +15,6 @@ var Home = require('./models/home')
 
 var app = express()
 
-
 mongoose.connect(secret.database, function(err){
   if (err) { console.log(err) }
   else { console.log('Connected to the database') }

@@ -1,5 +1,103 @@
 [
   {
+      "address_components": [
+    {
+      "long_name": "891",
+      "short_name": "891",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "14th Street",
+      "short_name": "14th St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Central Business District",
+      "short_name": "Central Business District",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80202",
+      "short_name": "80202",
+      "types": [
+        "postal_code"
+      ]
+    }
+  ],
+  "formatted_address": "891 14th St, Denver, CO 80202, USA",
+  "geometry": {
+    "price": 685000,
+    "bounds": {
+      "northeast": {
+        "lat": 39.7452324,
+        "lng": -104.9950755
+      },
+      "southwest": {
+        "lat": 39.7444226,
+        "lng": -104.9961391
+      }
+    },
+    "location": {
+      "lat": 39.7448275,
+      "lng": -104.9956073
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7461764802915,
+        "lng": -104.9942583197085
+      },
+      "southwest": {
+        "lat": 39.7434785197085,
+        "lng": -104.9969562802915
+      }
+    }
+  },
+  "place_id": "ChIJjTalS9B4bIcR8_RnbwPg1p0",
+  "types": [
+    "premise"
+  ]
+},
+{
     "address_components": [
       {
         "long_name": "5059",
@@ -532,6 +630,7 @@
     ],
     "formatted_address": "5817 Biscay St, Denver, CO 80249, USA",
     "geometry": {
+      "price": 1475000,
       "location": {
         "lat": 39.802233,
         "lng": -104.767747
@@ -549,6 +648,277 @@
       }
     },
     "place_id": "ChIJNW7O2DNkbIcRxC8hF4Vb6iQ",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "10385",
+        "short_name": "10385",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Grande Vista Court",
+        "short_name": "Grande Vista Ct",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lone Tree",
+        "short_name": "Lone Tree",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Douglas County",
+        "short_name": "Douglas County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80124",
+        "short_name": "80124",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "9600",
+        "short_name": "9600",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "10385 Grande Vista Ct, Lone Tree, CO 80124, USA",
+    "geometry": {
+      "price": 80000,
+      "location": {
+        "lat": 39.514029,
+        "lng": -104.901749
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.5153779802915,
+          "lng": -104.9004000197085
+        },
+        "southwest": {
+          "lat": 39.5126800197085,
+          "lng": -104.9030979802915
+        }
+      }
+    },
+    "partial_match": true,
+    "place_id": "ChIJkyJIsNGEbIcRHX-QlIYkRGE",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "9150",
+        "short_name": "9150",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Madre Place",
+        "short_name": "Madre Pl",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Lone Tree",
+        "short_name": "Lone Tree",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Douglas County",
+        "short_name": "Douglas County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80124",
+        "short_name": "80124",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "3047",
+        "short_name": "3047",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "9150 Madre Pl, Lone Tree, CO 80124, USA",
+    "geometry": {
+      "price": 580000,
+      "location": {
+        "lat": 39.549822,
+        "lng": -104.886216
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.5511709802915,
+          "lng": -104.8848670197085
+        },
+        "southwest": {
+          "lat": 39.5484730197085,
+          "lng": -104.8875649802915
+        }
+      }
+    },
+    "partial_match": true,
+    "place_id": "ChIJVa7G-KmFbIcRcPNyd4vuV_M",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "736",
+        "short_name": "736",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "York Street",
+        "short_name": "York St",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Country Club",
+        "short_name": "Country Club",
+        "types": [
+          "neighborhood",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver",
+        "short_name": "Denver",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Denver County",
+        "short_name": "Denver County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Colorado",
+        "short_name": "CO",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "80206",
+        "short_name": "80206",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "3748",
+        "short_name": "3748",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "736 York St, Denver, CO 80206, USA",
+    "geometry": {
+      "price": 1000500,
+      "location": {
+        "lat": 39.728045,
+        "lng": -104.959869
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.7293939802915,
+          "lng": -104.9585200197085
+        },
+        "southwest": {
+          "lat": 39.72669601970851,
+          "lng": -104.9612179802915
+        }
+      }
+    },
+    "place_id": "ChIJyTMH57h-bIcR2Jl1Oo9IQrM",
     "types": [
       "street_address"
     ]

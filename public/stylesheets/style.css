@@ -37,4 +37,9 @@ a {
   min-width: 100%;
 }
 
+.button-secondary {
+  background: rgb(66, 184, 221);
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 
