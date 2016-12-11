@@ -10,8 +10,11 @@ block content
         function outputUpdate(price, id) { document.querySelector(id).value = `$${price}`}
       button#show-homes Show Homes Inside Polygon
       button#undo-point.undo-point Undo Last Pin-Drop
-      button#log-homes.log-homes Log Home Coordinates
+      button#log-addresses.log-addresses Log Home Addresses
+      button#log-lat-lng.log-lat-lng Log Home Coordinates
       button#log-path.log-path Log Polygon Coordinates
+      button#new-poly.log-path New Polygon
+
       button#see-json.see-json(onclick='location.href="/data"') See JSON “Database”
       .price-range
         label(for='min-price') Min Price

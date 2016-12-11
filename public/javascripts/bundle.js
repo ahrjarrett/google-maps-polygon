@@ -8833,20 +8833,572 @@
 
 },{}],2:[function(require,module,exports){
 module.exports=[
-  { "lat": 39.71933533081653, "lng": -104.95479583740234, "price": 100000 },
-  { "lat": 39.74943369178247, "lng": -105.02723693847656, "price": 200000 },
-  { "lat": 39.771339142289,   "lng": -104.97539520263672, "price": 300000 },
-  { "lat": 39.78637860850151, "lng": -104.99771118164062, "price": 400000 },
-  { "lat": 39.78980820192016, "lng": -104.908447265625  , "price": 500000 },
-  { "lat": 39.74204232950661, "lng": -105.02655029296875, "price": 600000 },
-  { "lat": 39.69450749856092, "lng": -105.106201171875  , "price": 700000 },
-  { "lat": 39.65751331590311, "lng": -104.98947143554688, "price": 800000 },
-  { "lat": 39.75048953595117, "lng": -105.13916015625   , "price": 900000 },
-  { "lat": 39.79059962227578, "lng": -105.15838623046875, "price": 1000000 },
-  { "lat": 39.79271003204449, "lng": -105.23941040039062, "price": 1100000 },
-  { "lat": 39.43407169253772, "lng": -104.09271240234375, "price": 1200000 }
-]
 
+{
+  "address_components": [
+    {
+      "long_name": "5059",
+      "short_name": "5059",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "Osceola Street",
+      "short_name": "Osceola St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Northwest",
+      "short_name": "Northwest",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80212",
+      "short_name": "80212",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "long_name": "2626",
+      "short_name": "2626",
+      "types": [
+        "postal_code_suffix"
+      ]
+    }
+  ],
+  "formatted_address": "5059 Osceola St, Denver, CO 80212, USA",
+  "geometry": {
+    "price": 250000,
+    "location": {
+      "lat": 39.788539,
+      "lng": -105.038419
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7898879802915,
+        "lng": -105.0370700197085
+      },
+      "southwest": {
+        "lat": 39.7871900197085,
+        "lng": -105.0397679802915
+      }
+    }
+  },
+  "place_id": "ChIJRXP6doyHa4cR_LoZkrHFgsI",
+  "types": [
+    "street_address"
+  ]
+},
+{
+  "address_components": [
+    {
+      "long_name": "12370",
+      "short_name": "12370",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "East 55th Avenue",
+      "short_name": "E 55th Ave",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Montbello",
+      "short_name": "Montbello",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80239",
+      "short_name": "80239",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "long_name": "3611",
+      "short_name": "3611",
+      "types": [
+        "postal_code_suffix"
+      ]
+    }
+  ],
+  "formatted_address": "12370 E 55th Ave, Denver, CO 80239, USA",
+  "geometry": {
+    "price": 350000,
+    "location": {
+      "lat": 39.796006,
+      "lng": -104.844438
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7973549802915,
+        "lng": -104.8430890197085
+      },
+      "southwest": {
+        "lat": 39.7946570197085,
+        "lng": -104.8457869802915
+      }
+    }
+  },
+  "place_id": "ChIJH7dAR9VkbIcRiVJgaZNe4NA",
+  "types": [
+    "street_address"
+  ]
+},
+{
+  "address_components": [
+    {
+      "long_name": "75",
+      "short_name": "75",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "North Emerson Street",
+      "short_name": "N Emerson St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Central",
+      "short_name": "Central",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80218",
+      "short_name": "80218",
+      "types": [
+        "postal_code"
+      ]
+    }
+  ],
+  "formatted_address": "75 N Emerson St, Denver, CO 80218, USA",
+  "geometry": {
+    "price": 550000,
+    "location": {
+      "lat": 39.717774,
+      "lng": -104.977221
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7191229802915,
+        "lng": -104.9758720197085
+      },
+      "southwest": {
+        "lat": 39.7164250197085,
+        "lng": -104.9785699802915
+      }
+    }
+  },
+  "place_id": "ChIJUWcHDOd-bIcRtxKL1MmENZM",
+  "types": [
+    "street_address"
+  ]
+},
+{
+  "address_components": [
+    {
+      "long_name": "3734",
+      "short_name": "3734",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "Fillmore Street",
+      "short_name": "Fillmore St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "North",
+      "short_name": "North",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80205",
+      "short_name": "80205",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "long_name": "3644",
+      "short_name": "3644",
+      "types": [
+        "postal_code_suffix"
+      ]
+    }
+  ],
+  "formatted_address": "3734 Fillmore St, Denver, CO 80205, USA",
+  "geometry": {
+    "price": 650000,
+    "location": {
+      "lat": 39.768785,
+      "lng": -104.953266
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7701339802915,
+        "lng": -104.9519170197085
+      },
+      "southwest": {
+        "lat": 39.7674360197085,
+        "lng": -104.9546149802915
+      }
+    }
+  },
+  "place_id": "ChIJeTctIW95bIcR4ii88MN_q44",
+  "types": [
+    "street_address"
+  ]
+},
+{
+  "address_components": [
+    {
+      "long_name": "5045",
+      "short_name": "5045",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "Meade Street",
+      "short_name": "Meade St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Northwest",
+      "short_name": "Northwest",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80221",
+      "short_name": "80221",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "long_name": "1033",
+      "short_name": "1033",
+      "types": [
+        "postal_code_suffix"
+      ]
+    }
+  ],
+  "formatted_address": "5045 Meade St, Denver, CO 80221, USA",
+  "geometry": {
+    "price": 750000,
+    "location": {
+      "lat": 39.78826,
+      "lng": -105.036105
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7896089802915,
+        "lng": -105.0347560197085
+      },
+      "southwest": {
+        "lat": 39.7869110197085,
+        "lng": -105.0374539802915
+      }
+    }
+  },
+  "place_id": "ChIJ8ZrKx4uHa4cRu0JpBJJs018",
+  "types": [
+    "street_address"
+  ]
+},
+{
+  "address_components": [
+    {
+      "long_name": "5059",
+      "short_name": "5059",
+      "types": [
+        "street_number"
+      ]
+    },
+    {
+      "long_name": "Osceola Street",
+      "short_name": "Osceola St",
+      "types": [
+        "route"
+      ]
+    },
+    {
+      "long_name": "Northwest",
+      "short_name": "Northwest",
+      "types": [
+        "neighborhood",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver",
+      "short_name": "Denver",
+      "types": [
+        "locality",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Denver County",
+      "short_name": "Denver County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ]
+    },
+    {
+      "long_name": "Colorado",
+      "short_name": "CO",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ]
+    },
+    {
+      "long_name": "United States",
+      "short_name": "US",
+      "types": [
+        "country",
+        "political"
+      ]
+    },
+    {
+      "long_name": "80212",
+      "short_name": "80212",
+      "types": [
+        "postal_code"
+      ]
+    },
+    {
+      "long_name": "2626",
+      "short_name": "2626",
+      "types": [
+        "postal_code_suffix"
+      ]
+    }
+  ],
+  "formatted_address": "5059 Osceola St, Denver, CO 80212, USA",
+  "geometry": {
+    "price": 850000,
+    "location": {
+      "lat": 39.788539,
+      "lng": -105.038419
+    },
+    "location_type": "ROOFTOP",
+    "viewport": {
+      "northeast": {
+        "lat": 39.7898879802915,
+        "lng": -105.0370700197085
+      },
+      "southwest": {
+        "lat": 39.7871900197085,
+        "lng": -105.0397679802915
+      }
+    }
+  },
+  "place_id": "ChIJRXP6doyHa4cR_LoZkrHFgsI",
+  "types": [
+    "street_address"
+  ]
+}
+
+]
 
 },{}],3:[function(require,module,exports){
 var R = require('ramda')
@@ -8879,14 +9431,13 @@ module.exports = function(map, poly, el){
   }
 
   var getHomes = R.map(function(home){
-    var datum = new google.maps.LatLng(home)
-    if(home.price >= minPrice && home.price <= maxPrice){
+    var datum = new google.maps.LatLng(home.geometry.location)
+    if(home.geometry.price >= minPrice && home.geometry.price <= maxPrice){
       if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
-          results.push(home)
+        results.push(home)
       }
     }
   })
-
 
   var logHomes = document.getElementById(el)
   logHomes.addEventListener('click', function(e){
@@ -8902,19 +9453,83 @@ module.exports = function(map, poly, el){
     }
     deleteMarkers()
     results.forEach(function(home, idx){
-      var checkMapTemplate = `${home.lat} ${home.lng}`
+      var checkMapTemplate = `${home.formatted_address}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
-      markers.push(new google.maps.Marker({ position: home }))
+      markers.push(new google.maps.Marker({ position: home.geometry.location }))
     })
-
 
   })
 }
 
 },{"./data.json":2,"ramda":1}],4:[function(require,module,exports){
+var R = require('ramda')
+var homes = require('./data.json')
+
+module.exports = function(map, poly, el){
+  var polygon = poly
+  var markers = []
+  var results = []
+  var minPrice = document.getElementById('min-price').value
+  var maxPrice = document.getElementById('max-price').value
+
+  var setMapOnAll = function(mapToSet){
+    for(var i = 0; i < markers.length; i++){
+      markers[i].setMap(mapToSet)
+    }
+  }
+  var clearMarkers = function(){
+    setMapOnAll(null)
+  }
+  var deleteMarkers = function(){
+    clearMarkers()
+    markers = []
+  }
+  var addMarker = function(location){
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    })
+  }
+
+  var getHomes = R.map(function(home){
+    var datum = new google.maps.LatLng(home.geometry.location)
+    if(home.geometry.price >= minPrice && home.geometry.price <= maxPrice){
+      if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+        results.push(home)
+      }
+    }
+  })
+
+  var logLatLng = document.getElementById(el)
+  logLatLng.addEventListener('click', function(e){
+
+    e.preventDefault()
+    var parentNode = document.getElementById('check-map-log')
+
+    getHomes(homes)
+
+    //break while loop and forEach into own module
+    while (parentNode.firstChild) {
+      //console.log(firstChild)
+      parentNode.removeChild(parentNode.firstChild);
+    }
+    deleteMarkers()
+    results.forEach(function(home, idx){
+      var checkMapTemplate = `${home.geometry.location.lat} ${home.geometry.location.lng}`
+      var node = document.createElement('LI')
+      var textnode = document.createTextNode(checkMapTemplate)
+      node.appendChild(textnode)
+      parentNode.appendChild(node)
+      //markers.push(new google.maps.Marker({ position: home.geometry.location }))
+    })
+
+  })
+}
+
+},{"./data.json":2,"ramda":1}],5:[function(require,module,exports){
 // break while loop and forEach into own module
 module.exports = function(path, el){
   this.currentPath = path
@@ -8937,7 +9552,7 @@ module.exports = function(path, el){
   })
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 (function(){
 
   var R = require('ramda')
@@ -8951,7 +9566,8 @@ module.exports = function(path, el){
     var opts = require('./opts')
     var undoPin = require('./undoPin')
     var logPath = require('./logPath')
-    var logHomes = require('./logHomes')
+    var logAddresses = require('./logAddresses')
+    var logLatLng = require('./logLatLng')
     var showHomes = require('./showHomes')
 
     var mapDiv = 'map-canvas'
@@ -8959,6 +9575,7 @@ module.exports = function(path, el){
 
     map = new google.maps.Map(document.getElementById(mapDiv), mapOpts)
 
+    var newPolyBtn = document.getElementById('new-poly')
     var polyOpts = opts.polyOpts
     var polygon = new google.maps.Polygon(polyOpts)
     polygon.setMap(map)
@@ -8970,15 +9587,17 @@ module.exports = function(path, el){
 
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    logHomes(map, polygon, 'log-homes')
+    logAddresses(map, polygon, 'log-addresses')
+    logLatLng(map, polygon, 'log-lat-lng')
     showHomes(map, polygon, markers, results, 'show-homes')
 
   }
+
   window.onload = initMap
 
 }())
 
-},{"./data.json":2,"./logHomes":3,"./logPath":4,"./opts":6,"./showHomes":7,"./undoPin":8,"ramda":1}],6:[function(require,module,exports){
+},{"./data.json":2,"./logAddresses":3,"./logLatLng":4,"./logPath":5,"./opts":7,"./showHomes":8,"./undoPin":9,"ramda":1}],7:[function(require,module,exports){
 var opts = {
   mapOpts: {
     center: { lat: 39.7392, lng: -104.9903 },
@@ -8995,7 +9614,7 @@ var opts = {
 
 module.exports = opts
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 var R = require('ramda')
 var homes = require('./data.json')
 
@@ -9026,11 +9645,12 @@ module.exports = function(map, polygon, markers, results, el){
     }
 
     var getHomes = R.map(function(home){
-      var datum = new google.maps.LatLng(home)
-      if(home.price >= minPrice && home.price <= maxPrice){
+      var datum = new google.maps.LatLng(home.geometry.location)
+      if(home.geometry.price >= minPrice && home.geometry.price <= maxPrice){
         if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
+            console.log(home.formatted_address)
             results.push(home)
-            markers.push(new google.maps.Marker({ position: home }))
+            markers.push(new google.maps.Marker({ position: home.geometry.location }))
         }
       }
     })
@@ -9043,7 +9663,7 @@ module.exports = function(map, polygon, markers, results, el){
 
 }
 
-},{"./data.json":2,"ramda":1}],8:[function(require,module,exports){
+},{"./data.json":2,"ramda":1}],9:[function(require,module,exports){
 module.exports = function(el){
   var undoPin = document.getElementById(el)
   undoPin.addEventListener('click', function(e){
@@ -9052,4 +9672,4 @@ module.exports = function(el){
   })
 }
 
-},{}]},{},[5]);
+},{}]},{},[6]);

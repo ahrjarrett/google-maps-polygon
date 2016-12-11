@@ -11,7 +11,8 @@
     var opts = require('./opts')
     var undoPin = require('./undoPin')
     var logPath = require('./logPath')
-    var logHomes = require('./logHomes')
+    var logAddresses = require('./logAddresses')
+    var logLatLng = require('./logLatLng')
     var showHomes = require('./showHomes')
 
     var mapDiv = 'map-canvas'
@@ -19,6 +20,7 @@
 
     map = new google.maps.Map(document.getElementById(mapDiv), mapOpts)
 
+    var newPolyBtn = document.getElementById('new-poly')
     var polyOpts = opts.polyOpts
     var polygon = new google.maps.Polygon(polyOpts)
     polygon.setMap(map)
@@ -30,10 +32,12 @@
 
     undoPin('undo-point')
     logPath(currentPath, 'log-path')
-    logHomes(map, polygon, 'log-homes')
+    logAddresses(map, polygon, 'log-addresses')
+    logLatLng(map, polygon, 'log-lat-lng')
     showHomes(map, polygon, markers, results, 'show-homes')
 
   }
+
   window.onload = initMap
 
 }())

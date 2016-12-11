@@ -28,17 +28,16 @@ module.exports = function(map, poly, el){
   }
 
   var getHomes = R.map(function(home){
-    var datum = new google.maps.LatLng(home)
-    if(home.price >= minPrice && home.price <= maxPrice){
+    var datum = new google.maps.LatLng(home.geometry.location)
+    if(home.geometry.price >= minPrice && home.geometry.price <= maxPrice){
       if(google.maps.geometry.poly.containsLocation(datum, polygon)) {
-          results.push(home)
+        results.push(home)
       }
     }
   })
 
-
-  var logHomes = document.getElementById(el)
-  logHomes.addEventListener('click', function(e){
+  var logLatLng = document.getElementById(el)
+  logLatLng.addEventListener('click', function(e){
 
     e.preventDefault()
     var parentNode = document.getElementById('check-map-log')
@@ -47,18 +46,18 @@ module.exports = function(map, poly, el){
 
     //break while loop and forEach into own module
     while (parentNode.firstChild) {
+      //console.log(firstChild)
       parentNode.removeChild(parentNode.firstChild);
     }
     deleteMarkers()
     results.forEach(function(home, idx){
-      var checkMapTemplate = `${home.lat} ${home.lng}`
+      var checkMapTemplate = `${home.geometry.location.lat} ${home.geometry.location.lng}`
       var node = document.createElement('LI')
       var textnode = document.createTextNode(checkMapTemplate)
       node.appendChild(textnode)
       parentNode.appendChild(node)
-      markers.push(new google.maps.Marker({ position: home }))
+      //markers.push(new google.maps.Marker({ position: home.geometry.location }))
     })
-
 
   })
 }
