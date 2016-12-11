@@ -2,6 +2,16 @@ extends layout
 
 block content
   #content-wrapper
+    #map-logging
+      .path-log.logger
+        strong Coordinates:
+        ul#path-log.path-log
+      .addresses-log.logger
+        strong Inside Polygon, Within Price Range:
+        ul#addresses-log.addresses-log
+      .lat-lng-log.logger
+        strong Inside Polygon, Within Price Range:
+        ul#lat-lng-log
     #map-canvas.map-canvas
     #main-interface.main-interface
       script.
@@ -14,7 +24,6 @@ block content
       button#log-lat-lng.log-lat-lng.pure-button.pure-button-primary Log Home Coordinates
       button#log-path.log-path.pure-button.button-secondary Log Polygon Coordinates
       button#new-poly.log-path.pure-button.pure-button-primary New Polygon
-
       button#see-json.see-json.pure-button.button-secondary(onclick='location.href="/data"') See JSON “Database”
       .price-range
         label(for='min-price') Min Price
@@ -25,9 +34,3 @@ block content
         input.price-filter(id='max-price' type='range' min='0' max='1500000' step='100' value='1500000' oninput='outputUpdate(value, maxPriceOutput)')
         .price-output
           output.price(for='max-price' id='max-price-output') $1500000
-      .path-log.logger Polygon Coordinates:
-        ul#path-log.path-log
-      .addresses-log.logger Addresses Inside Polygon, Within Price Range:
-        ul#addresses-log.addresses-log
-      .lat-lng-log.logger Coordinates Inside Polygon, Within Price Range:
-        ul#lat-lng-log

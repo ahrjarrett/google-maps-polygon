@@ -9,11 +9,24 @@ body {
 a {
   color: #00B7FF;
 }
+ul {
+  padding: 20px;
+}
 
+li {
+  font-size: 11px;
+}
 #content-wrapper {
   height: 100%;
   width: 100%;
   display: flex;
+}
+
+#map-logging {
+  min-width: 20%;
+  max-width: 20%;
+  padding: 10px;
+  overflow: scroll;
 }
 
 #map-canvas {
@@ -24,17 +37,39 @@ a {
 #main-interface {
   display: flex;
   flex-direction: column;
-  max-width: 25%;
-  min-width: 25%;
+  min-width: 20%;
+  max-width: 20%;
 }
 
 .price-filter {
-  width: 100%;
+  width: 75%;
+  text-align: center;
+  margin: 0 12.5%;
 }
 
 .price-output {
-  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 7.5px;
+  padding-bottom: 7.5px;
   min-width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.price-range {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.price-range input {
+  width: 80%;
+}
+
+.price-range label {
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  /*margin-left: 100px;*/
 }
 
 .button-secondary {
@@ -42,4 +77,9 @@ a {
   color: white;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+
+#min-interface button {
+  min-height: 30px !important;
+}
+
 
