@@ -97,8 +97,8 @@ module.exports=[
   "types": [
     "premise"
   ]
-},
-{
+  },
+  {
     "address_components": [
       {
         "long_name": "5059",

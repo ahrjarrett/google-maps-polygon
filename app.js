@@ -4,21 +4,20 @@ var logger = require('morgan')
 var cookieParser = require('cookie-parser')
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose')
-var secret = ('./secret')
+//var secret = ('./secret')
 
 // ROUTERS
 var index = require('./routes/index')
 var data = require('./routes/data')
 
-// MODELS
-var Home = require('./models/home')
-
 var app = express()
 
-mongoose.connect(secret.database, function(err){
-  if (err) { console.log(err) }
-  else { console.log('Connected to the database') }
-})
+// MODELS
+var home = require('./models/home')
+
+//if('development' == app.get('env')) {
+//  mongoose.connect(secret.database)
+//}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -50,5 +49,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500)
   res.render('error')
 })
+
+//app.get('/:id', function(req, res, next){
+//  mongoose.model('home').find(function(err, homes) {
+//    res.send(homes)
+//  })
+//})
 
 module.exports = app

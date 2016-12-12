@@ -1,6 +1,8 @@
 # Real Estate Polygon App
 
-Demo: <https://murmuring-forest-15212.herokuapp.com/>
+Demo: ~~This is no longer the active repository~~
+
+See [Polygon](https://github.com/ahrjarrett/polygon) for the most up-to-date version of the project.
 
 Click at least twice on the map to create a line, three times or more to create a polygon. On the right are operations you can perform, including a log of the coordinates of the line/polygon and a function that will check a JSON array full of coordinates and return which, if any, are contained inside the polygon and fall within the designated price range (click 'See JSON Data' to see all coordinates).
 
